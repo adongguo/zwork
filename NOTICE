@@ -1,0 +1,24 @@
+ZWork
+Copyright 2026 ZWork contributors
+
+This product is a modified version of goose (https://github.com/aaif-goose/goose),
+Copyright 2024 Block, Inc. and the goose contributors, licensed under the
+Apache License, Version 2.0. The full license text is in the LICENSE file.
+
+Modifications made in ZWork include, among others:
+- renaming the product, crates, packages, binaries, environment variables,
+  configuration paths and protocol identifiers from "goose" to "zwork";
+- replacing brand assets, fonts, prompts and user-facing text;
+- turning upstream-operated online services (documentation site, update
+  feeds, telemetry, OAuth client metadata) into opt-in configuration that is
+  disabled by default;
+- replacing the LGPL-3.0-licensed ansi_colours dependency with an
+  independent MIT-licensed implementation (vendor/ansi_colours);
+- removing upstream community, documentation-site and release infrastructure.
+
+The goose name and logo are trademarks of their respective owners and are not
+used to identify this product.
+
+Third-party components keep their own licenses, including the JavaScript
+libraries bundled under crates/zwork-mcp/licenses and the Rust and npm
+dependencies declared in Cargo.lock and ui/pnpm-lock.yaml.
