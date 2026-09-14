@@ -10,12 +10,13 @@ ZWork is an independent distribution of [goose](https://github.com/aaif-goose/go
 ## Features
 
 - **Yunxiao workbench**: work items on a board or list, repositories with local clones, code and diffs, merge requests, pipelines and packages, with a one-click hand-off to the agent.
-- **Providers**: Qoder CLI, QwenWork, Claude Code, Codex and the providers that ship with goose. New conversations switch provider and model on the chat page.
+- **Providers**: Qoder CLI, QwenWork, Claude Code, Codex and the providers that ship with goose. New conversations switch provider and model on the chat page, and started conversations can switch models.
 - **Workspace tabs**: tabs grouped by working directory that come back after a restart, with session search and status filters.
 - **Command palette and quick session jump**: `⌘⇧P` or `⌘K` for commands, `⌘P` for sessions.
 - **Dracula PRO themes**: Dracula Pro, Alucard, Blade, Buffy, Lincoln, Morbius, Van Helsing and Aura.
 - **XiYang**: a desktop companion that follows your conversations.
 - **Desktop control**: drive the running app from the `zwork desktop` CLI or the `zwork-desktop` skill.
+- **Updates**: ZWork checks this repository for new releases, downloads them in the background and installs them when you choose Restart to Update in Settings > App.
 
 ## Install
 
@@ -24,10 +25,12 @@ ZWork is an independent distribution of [goose](https://github.com/aaif-goose/go
 
 The app is signed with a Developer ID certificate and notarized by Apple. This release requires an Apple Silicon Mac running macOS 12 or later.
 
+ZWork 1.52.0 and later update from Settings. If you run 1.51.0, install the latest release manually once.
+
 To verify the download, place the `.sha256` file next to the DMG and run:
 
 ```bash
-shasum -a 256 -c ZWork-<version>-arm64.sha256
+shasum -a 256 -c --ignore-missing ZWork-<version>-arm64.sha256
 ```
 
 ## Before you start
